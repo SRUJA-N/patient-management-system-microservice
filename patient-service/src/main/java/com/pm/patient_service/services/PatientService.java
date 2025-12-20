@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 @Service
 
 public class PatientService{
-    private final Patientrepo patientRepository;
+    private final Patientrepo Patientrepository;
 
-    public PatientService(Patientrepo patientRepository) {
-        this.patientRepository = patientRepository;
+    public PatientService(Patientrepo Patientrepository) {
+        this.Patientrepository = Patientrepository;
     }
 
 
