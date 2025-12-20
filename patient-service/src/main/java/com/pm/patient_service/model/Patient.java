@@ -1,12 +1,9 @@
-package com.pm.model;
+package com.pm.patient_service.model;
 import jakarta.persistence.Column;
 import  jakarta.persistence.Entity;
 
 import java.time.LocalDate;
 import java.util.UUID;
-
-
-import lombok.Data;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
@@ -36,7 +33,7 @@ public class Patient{
     private LocalDate dateofregistration;
 
 
-}
+
 //getter and setters
 
     public UUID getId() {
