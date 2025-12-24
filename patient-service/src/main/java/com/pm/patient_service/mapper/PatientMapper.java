@@ -1,6 +1,7 @@
 package com.pm.patient_service.mapper;
 
 import com.pm.patient_service.dto.PatientResponseDTO;
+import com.pm.patient_service.dto.Patientrequestdto;
 import com.pm.patient_service.model.Patient;
 
 public class PatientMapper {
@@ -13,5 +14,14 @@ public class PatientMapper {
         dto.setGender(patient.getGender());
         dto.setEmail(patient.getEmail());
         return dto;
+    }
+    public static Patient toModel(Patientrequestdto patientrequestdto) {
+        Patient patient = new Patient();
+        patient.setName(patientrequestdto.getName()); 
+        patient.setEmail(patientrequestdto.getEmail());
+        patient.setAddress(patientrequestdto.getAddress());
+        patient.setPhoneno(patientrequestdto.getPhoneNumber());
+        patient.setGender(patientrequestdto.getGender());
+        return patient;
     }
 }
